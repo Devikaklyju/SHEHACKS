@@ -1,0 +1,80 @@
+
+body{
+     background-image: url("CD1.jpg");
+     background-size: cover;
+}
+
+.title {
+    font-size: 350%;
+    padding-left: 8em;
+    padding-right: 24rem;
+}
+ 
+.title h1{
+    color: yellow;
+    background-color: black;
+}
+
+
+.home .box-container{
+    height: 25rem;
+    width: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rems;
+    padding: 15rem 30%;
+    
+}
+
+.home .box-container:first-child{
+    align-self: center;
+}
+
+.home .box-container .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1 rem rgba(0,0,0,.1);
+    border: 1rem solid rgba(106, 229, 245, 0.932);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.home .box-container .box .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%; left: 0;
+}
+
+.home .box-container .box .content{
+    text-align: center;
+    background: azure;
+    padding: 2rem;
+}
+
+.home .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: rgb(33, 46, 226);
+}
+
+.home .box-container .box .content p{
+    font-size: 1.5rem;
+    color: rgb(49, 45, 45);
+    padding: 1rem 0;
+}
+
+.home .box-container .box:hover .image{
+    top: 0;
+
+}
+
+.home .box-container .box:hover .content{
+    transform: translateY(100%);
+}
+
+
+   
